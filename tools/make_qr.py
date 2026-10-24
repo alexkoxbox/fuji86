@@ -3,7 +3,7 @@ import subprocess, sys
 import qrcode, qrcode.image.svg
 from PIL import Image
 
-URL = sys.argv[1] if len(sys.argv) > 1 else "https://alexkoxbox.github.io/posters/fuji86/"
+URL = sys.argv[1] if len(sys.argv) > 1 else "https://alexkoxbox.github.io/fuji86/"
 
 def make():
     q = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_H, border=4, box_size=10)
